@@ -1,0 +1,44 @@
+/* 定义颜色变量 */
+:root {
+    --background-color: #70c5ce;
+    --border-color: #0c853f;
+    --button-color: #ff6347;
+    --button-hover-color: #ff4500;
+}
+
+body {
+    display: flex;
+    /* 使用弹性盒布局，使内容居中 */
+    justify-content: center;
+    /* 将内容水平居中 */
+    align-items: center;
+    /* 将内容垂直居中 */
+    height: 100vh;
+    /* 设置body高度为视口高度，确保画布在屏幕中央 */
+    margin: 10px;
+    /* 去除默认的页面边距 */
+    background-color: var(--background-color);
+    /* 设置背景颜色为浅蓝色 */
+}
+
+canvas {
+    border: 10px solid var(--border-color);
+    /* 设置画布边框，宽度2像素，颜色为黑色 */
+}
+
+#backButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#backButton:hover {
+    background-color: var(--button-hover-color);
+}
